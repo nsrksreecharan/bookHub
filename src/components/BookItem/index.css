@@ -1,0 +1,49 @@
+.BookItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 320px;
+  margin-right: 60px;
+}
+.bookImage {
+  width: 133px;
+  height: 155px;
+}
+.BookHeadingItem {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0px;
+  width: 200px;
+}
+.BookDetailss {
+  width: 146px;
+  margin: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  width: 150px;
+}
+@media screen and (max-width: 500px) {
+  .BookItem {
+    box-sizing: content-box;
+    padding: 15px;
+    margin: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .BookDetailss {
+    box-sizing: content-box;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .BookHeadingItem {
+    font-size: 20px;
+    width: 150px;
+  }
+}

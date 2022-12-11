@@ -1,0 +1,110 @@
+.linksContainerHeader {
+  display: flex;
+  flex-direction: row;
+}
+.link {
+  margin: 20px;
+}
+.Link {
+  color: inherit;
+}
+.Header {
+  display: flex;
+  flex-direction: row;
+  height: 89px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ebebe4;
+}
+.LogoContainerHeader {
+  margin-left: 50px;
+}
+.linksContainerHeader {
+  margin-right: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.LogoutButton {
+  width: 73px;
+  height: 32px;
+  background: #0284c7;
+  border-radius: 4px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f8fafc;
+  border: none;
+  cursor: pointer;
+}
+.activeLinkHeader {
+  color: #0284c7 !important;
+  border-bottom: 1px solid #0284c7;
+}
+.HeaderMobile {
+  display: none;
+}
+.linksContainerHeaderMobile {
+  display: none;
+}
+
+@media screen and (max-width: 418px) {
+  .Header {
+    display: none;
+  }
+  .HeaderMobile {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 56px;
+  }
+  .MenuLogo {
+    font-size: 30px;
+  }
+  .MenuButton {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .websiteLogoNav {
+    height: 26px;
+    width: 94px;
+  }
+  .linksContainerHeaderMobile {
+    display: none;
+    background-color: white;
+    margin: 0px;
+    padding: 10px;
+    padding-bottom: 30px;
+    position: absolute;
+  }
+  .visible {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+  }
+  .link {
+    margin: 10px;
+    padding: 0;
+    display: inline;
+  }
+  .LogoutButton {
+    margin: 10px;
+  }
+  Li {
+    margin: 10px;
+    padding: 0px;
+    height: 30px;
+  }
+}

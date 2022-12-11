@@ -1,0 +1,128 @@
+.LoginRoute {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.LoginBoxContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 100vh;
+}
+.LoginPageImage {
+  width: 780px;
+  height: 100%;
+}
+.LoginContainer {
+  display: flex;
+  flex-direction: column;
+  width: 499px;
+  align-items: center;
+  justify-content: center;
+}
+.FormContainerLogin {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  padding: 20px;
+}
+.FormInputLogin {
+  height: 56px;
+  padding: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  width: 360px;
+}
+.FormLabelLogin {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #5a7184;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.LoginButton {
+  background: #0284c7;
+  border-radius: 8px;
+  margin-top: 20px;
+  height: 56px;
+  width: 360px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.red {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ef4444;
+}
+.LoginPageImageMobile {
+  display: none;
+}
+
+@media screen and (max-width: 418px) {
+  .LoginPageImageMobile {
+    display: block;
+    width: 216px;
+    height: 216px;
+    margin: 10px;
+  }
+  .LoginPageImage {
+    display: none;
+  }
+  .LoginRoute {
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  .FormInputLogin {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    background: #ffffff;
+    border: 1px solid #c3cad9;
+    border-radius: 8px;
+    width: 312px;
+  }
+  .FormLabelLogin {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .LoginButton {
+    width: 312px;
+    height: 40px;
+  }
+  .LoginBoxContainer {
+    height: auto;
+    width: 100vw;
+  }
+  .LoginImage {
+    width: 104px;
+  }
+  .FormContainerLogin {
+    width: 100%;
+  }
+}

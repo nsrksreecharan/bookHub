@@ -1,0 +1,157 @@
+.BookDetails {
+  width: 100%;
+  height: 130vh;
+  margin: 0;
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.BookItemDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 32px;
+}
+.bookImageDetail {
+  width: 235px;
+  height: 274px;
+}
+.BookHeadingItemDetail {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 5px;
+  font-size: 32px;
+  width: 100%;
+  line-height: 48px;
+}
+.BookDetailsDetail {
+  width: 303px;
+  height: 192px;
+  margin: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+.DetailsBox {
+  width: 1140px;
+  height: 826px;
+  background: #ffffff;
+  box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+    0px 1px 2px rgba(96, 97, 112, 0.16);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px;
+}
+hr {
+  width: 100%;
+}
+.authorHeading {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #334155;
+}
+.authorDescription {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #475569;
+  width: 1012px;
+  height: 84px;
+}
+.FailureContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.FailureImage {
+}
+.FailureText {
+  width: 100vw;
+  padding: 30px;
+  text-align: center;
+}
+.blue {
+  color: #0284c7;
+  font-weight: 700;
+}
+@media screen and (max-width: 500px) {
+  .BookDetails {
+    width: 100vw;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .DetailsBox {
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 0;
+    background-color: #e5e5e5 !important;
+  }
+  .bookImageDetail {
+    width: 235px;
+    height: 274px;
+    border-radius: 15px;
+  }
+  .BookDetailsDetail {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .BookItemDetails {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .BookHeadingItemDetail {
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    width: 100vw;
+  }
+  .p {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .authorHeading {
+    width: 80vw;
+  }
+  .authorDescription {
+    width: 100%;
+    height: 100%;
+  }
+  .authorContainer {
+    width: 100%;
+  }
+  .FailureContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+  }
+}
