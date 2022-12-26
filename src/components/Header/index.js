@@ -20,7 +20,7 @@ class Header extends Component {
     const LogoutUser = () => {
       const {history} = this.props
       Cookies.remove('jwt_token')
-      history.replace('/bookHub')
+      history.replace('/')
     }
 
     return (
@@ -33,7 +33,7 @@ class Header extends Component {
             <>
               <div className="Header">
                 <div className="LogoContainerHeader">
-                  <Link to="/bookHub">
+                  <Link to="/">
                     <img
                       src="https://res.cloudinary.com/dub9ymu0j/image/upload/v1670662961/Group_7731bookHubLogo_uliueq.jpg"
                       alt="website Logo"
@@ -43,7 +43,7 @@ class Header extends Component {
                 <div className="linksContainerHeader">
                   <li type="none">
                     <Link
-                      to="/bookHub"
+                      to="/"
                       style={{textDecoration: 'none', color: 'inherit'}}
                       className={`link ${
                         active === 'Home' ? 'activeLinkHeader' : ''

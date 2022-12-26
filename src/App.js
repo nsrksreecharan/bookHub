@@ -42,7 +42,7 @@ class App extends Component {
       >
         <Switch>
           <Route path="/login" component={Login} />
-          <ProtectedRoute exact path="/bookHub" component={Home} />
+          <ProtectedRoute exact path="/" component={Home} />
           <ProtectedRoute exact path="/shelf" component={BookShelves} />
           <ProtectedRoute exact path="/books/:id" component={BookDetails} />
           <Route component={NotFound} />

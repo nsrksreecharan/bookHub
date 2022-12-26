@@ -61,7 +61,7 @@ class Login extends Component {
     if (response.ok === true) {
       const {history} = this.props
       Cookies.set('jwt_token', data.jwt_token, {expires: 30})
-      history.replace('/bookHub')
+      history.replace('/')
     } else {
       this.setState({showError: true, errorMsg: data.error_msg})
     }
