@@ -93,7 +93,7 @@ class Login extends Component {
     const token = Cookies.get('jwt_token')
 
     if (token !== undefined) {
-      return <Redirect to="/" />
+      return <Redirect to="/bookHub" />
     }
     return (
       <div className="LoginRoute">
