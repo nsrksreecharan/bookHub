@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/bookHub/bookHub/static/css/main.dab69272.chunk.css",
-    "main.js": "/bookHub/bookHub/static/js/main.3b9ab021.chunk.js",
-    "main.js.map": "/bookHub/bookHub/static/js/main.3b9ab021.chunk.js.map",
-    "runtime-main.js": "/bookHub/bookHub/static/js/runtime-main.a5e313d8.js",
-    "runtime-main.js.map": "/bookHub/bookHub/static/js/runtime-main.a5e313d8.js.map",
-    "static/css/2.489d03f7.chunk.css": "/bookHub/bookHub/static/css/2.489d03f7.chunk.css",
-    "static/js/2.8dfd498b.chunk.js": "/bookHub/bookHub/static/js/2.8dfd498b.chunk.js",
-    "static/js/2.8dfd498b.chunk.js.map": "/bookHub/bookHub/static/js/2.8dfd498b.chunk.js.map",
-    "index.html": "/bookHub/bookHub/index.html",
-    "static/css/2.489d03f7.chunk.css.map": "/bookHub/bookHub/static/css/2.489d03f7.chunk.css.map",
-    "static/css/main.dab69272.chunk.css.map": "/bookHub/bookHub/static/css/main.dab69272.chunk.css.map",
-    "static/js/2.8dfd498b.chunk.js.LICENSE.txt": "/bookHub/bookHub/static/js/2.8dfd498b.chunk.js.LICENSE.txt",
-    "static/media/slick-theme.css": "/bookHub/bookHub/static/media/slick.c94f7671.ttf"
+    "main.css": "/bookHub/static/css/main.dab69272.chunk.css",
+    "main.js": "/bookHub/static/js/main.3b9ab021.chunk.js",
+    "main.js.map": "/bookHub/static/js/main.3b9ab021.chunk.js.map",
+    "runtime-main.js": "/bookHub/static/js/runtime-main.58b91921.js",
+    "runtime-main.js.map": "/bookHub/static/js/runtime-main.58b91921.js.map",
+    "static/css/2.5e81f628.chunk.css": "/bookHub/static/css/2.5e81f628.chunk.css",
+    "static/js/2.8dfd498b.chunk.js": "/bookHub/static/js/2.8dfd498b.chunk.js",
+    "static/js/2.8dfd498b.chunk.js.map": "/bookHub/static/js/2.8dfd498b.chunk.js.map",
+    "index.html": "/bookHub/index.html",
+    "static/css/2.5e81f628.chunk.css.map": "/bookHub/static/css/2.5e81f628.chunk.css.map",
+    "static/css/main.dab69272.chunk.css.map": "/bookHub/static/css/main.dab69272.chunk.css.map",
+    "static/js/2.8dfd498b.chunk.js.LICENSE.txt": "/bookHub/static/js/2.8dfd498b.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/bookHub/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.a5e313d8.js",
-    "static/css/2.489d03f7.chunk.css",
+    "static/js/runtime-main.58b91921.js",
+    "static/css/2.5e81f628.chunk.css",
     "static/js/2.8dfd498b.chunk.js",
     "static/css/main.dab69272.chunk.css",
     "static/js/main.3b9ab021.chunk.js"
