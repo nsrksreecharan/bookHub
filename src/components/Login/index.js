@@ -5,8 +5,8 @@ import './index.css'
 
 class Login extends Component {
   state = {
-    username: '',
-    password: '',
+    username: 'henry',
+    password: 'henry_the_developer',
     showError: false,
     errorMsg: '',
     showDivLogin: true,
@@ -61,42 +61,10 @@ class Login extends Component {
     if (response.ok === true) {
       const {history} = this.props
       Cookies.set('jwt_token', data.jwt_token, {expires: 30})
-      history.replace('/')
+      history.replace('/bookHub')
     } else {
       this.setState({showError: true, errorMsg: data.error_msg})
     }
-  }
-
-  SubmitFormRegister = async event => {
-    event.preventDefault()
-    const {username, password, name, gender} = this.state
-    const RegisterApiUrl = 'https://apis.ccbp.in/login'
-    const userDetails = {
-      username,
-      password,
-      name,
-      gender,
-    }
-    const options = {
-      method: 'POST',
-      body: JSON.stringify(userDetails),
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-    }
-    const response = await fetch(RegisterApiUrl, options)
-    const data = await response.json()
-    console.log(data)
-    /*
-    if (response.ok === true) {
-      const {history} = this.props
-      Cookies.set('jwt_token', data.jwt_token, {expires: 30})
-      history.replace('/')
-    } else {
-      this.setState({showError: true, errorMsg: data.error_msg})
-    }
-    */
   }
 
   ShowError = event => {
@@ -151,15 +119,6 @@ class Login extends Component {
               />
             </div>
             <div>
-              <button
-                type="button"
-                onClick={this.changeDiv}
-                className="loginRegisterButtonMobile"
-              >
-                {showDivLogin
-                  ? 'New User ? Register here'
-                  : 'Already Registered Login here'}
-              </button>
               <form
                 onSubmit={
                   username === '' || password === ''
@@ -178,6 +137,7 @@ class Login extends Component {
                   id="username"
                   type="text"
                   onChange={this.updateUsername}
+                  value={username}
                   placeholder="Enter username"
                   className="FormInputLogin"
                 />
@@ -188,6 +148,7 @@ class Login extends Component {
                   id="password"
                   type="password"
                   onChange={this.updatePassword}
+                  value={password}
                   placeholder="Enter Password"
                   className="FormInputLogin"
                 />
@@ -196,87 +157,6 @@ class Login extends Component {
                 </button>
                 <p className="red">{showError ? errorMsg : ''}</p>
               </form>
-
-              <form
-                onSubmit={
-                  username === '' || password === '' || name === ''
-                    ? this.ShowErrorRegister
-                    : this.SubmitFormRegister
-                }
-                className={`FormContainerRegister ${
-                  showDivRegister ? '' : 'hideRegister'
-                }`}
-                showDivRegister
-              >
-                <label htmlFor="username" className="FormLabelLogin">
-                  Username
-                </label>
-                <input
-                  id="username"
-                  type="text"
-                  onChange={this.updateUsername}
-                  placeholder="Enter username"
-                  className="FormInputLogin"
-                />
-                <label htmlFor="password" className="FormLabelLogin">
-                  Password
-                </label>
-                <input
-                  id="password"
-                  type="text"
-                  onChange={this.updatePassword}
-                  placeholder="Enter Password"
-                  className="FormInputLogin"
-                />
-                <label htmlFor="name" className="FormLabelLogin">
-                  Name
-                </label>
-                <input
-                  id="name"
-                  type="text"
-                  onChange={this.updateName}
-                  placeholder="Enter Name"
-                  value={name}
-                  className="FormInputLogin"
-                />
-                <label htmlFor="gender" className="FormLabelLogin">
-                  Gender
-                  <input
-                    type="radio"
-                    className="gender"
-                    id="male"
-                    name="gender"
-                    checked={gender === 'male'}
-                    onClick={this.updateGender}
-                  />
-                  <label htmlFor="Male">Male</label>
-                  <input
-                    type="radio"
-                    className="gender"
-                    id="female"
-                    name="gender"
-                    onClick={this.updateGender}
-                    checked={gender === 'female'}
-                  />
-                  <label htmlFor="Female">Female</label>
-                </label>
-
-                <button type="submit" className="LoginButton">
-                  Register
-                </button>
-                <p className="red">
-                  {showErrorRegister ? errorMsgRegister : ''}
-                </p>
-              </form>
-              <button
-                type="button"
-                onClick={this.changeDiv}
-                className="loginRegisterButton"
-              >
-                {showDivLogin
-                  ? 'New User ? Register here'
-                  : 'Already Registered Login here'}
-              </button>
             </div>
           </div>
         </div>
